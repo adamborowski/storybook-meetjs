@@ -37,5 +37,3 @@ look like:
     )
 
 ;
-
-//todo inne zastosowania: live documentation
