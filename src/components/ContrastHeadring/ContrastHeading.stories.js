@@ -16,3 +16,7 @@ storiesOf('ContrastHeading', module)
     </ContrastHeading>)
 
 ;
+
+// todo some progressbar, knobs: bool, number, ...others
+// todo addon-actions - callbacks
+//todo inne zastosowania: live documentation
