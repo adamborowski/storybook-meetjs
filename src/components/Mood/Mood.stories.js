@@ -6,11 +6,6 @@ import Mood from './Mood';
 
 const defaultDate = new Date();
 
-function myDateKnob(name, defaultValue) {
-    const stringTimestamp = date(name, defaultValue)
-    return new Date(stringTimestamp)
-}
-
 
 class AutomaticDemo extends React.Component {
 
@@ -52,7 +47,7 @@ class AutomaticDemo extends React.Component {
 }
 
 storiesOf('Mood', module)
-    // config
+// config
 
     .addDecorator(withKnobs)
 
@@ -61,7 +56,7 @@ storiesOf('Mood', module)
     .add('default', () => <div style={{margin: 100}}>
         <Mood
             value={number('value', 0, {range: true, min: 0, max: 4, step: 1})}
-            date={myDateKnob('date', defaultDate)}
+            date={new Date(date('date', defaultDate))}
         />
     </div>)
 
