@@ -30,7 +30,7 @@ look like:
 > written like so.
 
 `)(() => <UserList
-            users={array('users', ['Adam Borowski', 'Filip Borowski', 'Kasia Borowska'])}
+            users={array('users', ['Kamil Stoch', 'Maciej Kot', 'Dawid Kubacki'])}
             loading={boolean('is loading', false)}
             style={{width: 300}}
         />)
