@@ -1,6 +1,7 @@
 import React from "react";
 import {storiesOf} from "@storybook/react";
 import {withKnobs, array, boolean, number, date, button} from "@storybook/addon-knobs";
+import withPropsCombinations from 'react-storybook-addon-props-combinations'
 import Mood from './Mood';
 
 const defaultDate = new Date();
@@ -51,7 +52,7 @@ class AutomaticDemo extends React.Component {
 }
 
 storiesOf('Mood', module)
-// config
+    // config
 
     .addDecorator(withKnobs)
 
@@ -65,5 +66,9 @@ storiesOf('Mood', module)
     </div>)
 
     .add('automatic mood change', () => <AutomaticDemo/>)
+
+    .add('props combinations', withPropsCombinations(Mood, {
+        value: [0, 1, 2, 3, 4], date: [1, 2, 3, 4, 5, 6, 7].map(n=>new Date(`2017-11-0${n}`))
+    }, {showSource: false}))
 
 ;
