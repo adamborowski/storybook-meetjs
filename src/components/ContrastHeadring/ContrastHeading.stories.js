@@ -1,7 +1,7 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {withKnobs, text, color} from '@storybook/addon-knobs'
-import ContrastHeading from "./ContrastHeading";
+import {withKnobs, text, color} from '@storybook/addon-knobs';
+import ContrastHeading from './ContrastHeading';
 
 
 storiesOf('ContrastHeading', module)
@@ -12,8 +12,9 @@ storiesOf('ContrastHeading', module)
     // stories
 
     .add('default', () => <ContrastHeading color={color('bg color', '#cc5511')} style={{padding: 20}}>
-        { text('content', 'Lorem impsum, dolor sit amet...')}
-    </ContrastHeading>)
+            { text('content', 'Lorem impsum, dolor sit amet...')}
+        </ContrastHeading>
+    )
 
 ;
 
