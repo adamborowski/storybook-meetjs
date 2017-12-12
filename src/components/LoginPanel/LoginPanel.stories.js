@@ -1,21 +1,14 @@
-import React from 'react';
-import {storiesOf} from '@storybook/react';
-import {withKnobs, text, select} from '@storybook/addon-knobs'
-import {action} from '@storybook/addon-actions';
+import React from "react";
+import {storiesOf} from "@storybook/react";
+import {withKnobs, text, select} from "@storybook/addon-knobs";
+import {action} from "@storybook/addon-actions";
+import LoginPanel from "./LoginPanel";
+import avatar002 from "../__stories__/002-user.png";
+import avatar003 from "../__stories__/003-girl-1.png";
+import avatar004 from "../__stories__/004-man.png";
+import avatar005 from "../__stories__/005-girl.png";
+import withPaper from "../__stories__/withPaper";
 
-import LoginPanel from './LoginPanel';
-
-import avatar002 from '../__stories__/002-user.png';
-import avatar003 from '../__stories__/003-girl-1.png';
-import avatar004 from '../__stories__/004-man.png'
-import avatar005 from '../__stories__/005-girl.png';
-import {Paper} from "material-ui";
-
-const withPaper = (storyFn) => (
-    <Paper style={{width: 340, padding: 10}}>
-        {storyFn()}
-    </Paper>
-);
 
 storiesOf('LoginPanel', module)
 // config
