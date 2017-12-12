@@ -29,11 +29,11 @@ look like:
 > Block quotes are
 > written like so.
 
-`)(() => <UserList
+`)(
+        () => <UserList
             users={array('users', ['Kamil Stoch', 'Maciej Kot', 'Dawid Kubacki'])}
             loading={boolean('is loading', false)}
             style={{width: 300}}
         />)
     )
-
 ;
